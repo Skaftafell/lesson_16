@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 17</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+
+		  </header>
+        <main class="page">
+            <section class="page__questions questions-page">
+                <div class="questions-page__container">
+                    <div class="questions-page__image">
+                        <img src="img/illustration.svg" alt="woman">
+                    </div>
+                    <div class="questions-page__content">
+                        <h3 class="questions-page__label label">Any questions?</h3>
+                        <h2 class="questions-page__title title">Drop us a line</h2>
+                        <form action="https://jsonplaceholder.typicode.com/posts" method="POST"
+                            class="questions-page__form form">
+                            <div class="form__line">
+                                <label for="name" class="form__label">First Name*</label>
+                                <input class="form__input" id="name" required type="text" name="name"
+                                    placeholder="Your first name">
+                            </div>
+                            <div class="form__line">
+                                <label for="last-name" class="form__label">Last Name*</label>
+                                <input class="form__input" id="last-name" required type="text" name="last-name"
+                                    placeholder="Your last name">
+                            </div>
+                            <div class="form__line">
+                                <label for="e-mail" class="form__label">Email*</label>
+                                <input class="form__input" id="e-mail" autocomplete="off" required type="email"
+                                    name="e-mail" placeholder="Your working email">
+                            </div>
+                            <div class="form__line">
+                                <label for="phone" class="form__label">Phone*</label>
+                                <input class="form__input" id="phone" autocomplete="off" required  type="tel" name="phone"
+                                    placeholder="Your phone number">
+                            </div>
+                            <div class="form__line form__line--width">
+                                <label for="message" class="form__label">Message*</label>
+                                <textarea class="form__area" id="message" required placeholder="Your message"
+                                    name="message"></textarea>
+                            </div>
+                            <div class="form__line checkbox">
+                                <input id="agree" type="checkbox" checked required value="yes" name="agree"
+                                    class="checkbox__input">
+                                <label for="agree" class="checkbox__label"><span class="checkbox__text">I agree to
+                                        receive communications from Createx Online School</span></label>
+                            </div>
+                            <div class="form__line">
+                                <button type="submit" class="form__button button"><span>Send
+                                        message</span></button>
+                            </div>
+									 <div class="form__line form__line--width">
+										<div class="form__title">radio buttons</div>
+										<div class="form__radio radio">
+											 <input checked class="radio__input" id="marketing" value="marketing" name="course"
+												  type="radio">
+											 <label class="radio__label" for="marketing">radio button 1</label>
+										</div>
+										<div class="form__radio radio">
+											 <input class="radio__input" id="management" name="course" value="management"
+												  type="radio">
+											 <label class="radio__label" for="management">radio button 2</label>
+										</div>
+										<div class="form__radio radio">
+											 <input class="radio__input" id="recruting" value="recruting" name="course"
+												  type="radio">
+											 <label class="radio__label" for="recruting">radio button 3</label>
+										</div>
+								  </div>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Правильний CSS!" />
+                </a>
+            </p>
+                   
+        </footer>
+
+    </div>
+</body>
+
+</html>
